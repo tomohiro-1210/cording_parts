@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- style.css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Header_template</title>
+</head>
+<body>
+    <!-- headerテンプレート１ -->
+    <header class="l-header-tp4">
+      <div class="l-header-tp4__inner">
+        <h1 class="l-header-tp4__logo">logo</h1>
+        <nav class="l-header-tp4__nav">
+          <ul class="l-header-tp4__menu">
+            <li class="l-header-tp4__list"><a href="#">MENU1</a></li>
+            <li class="l-header-tp4__list"><a href="#">MENU2</a></li>
+            <li class="l-header-tp4__list"><a href="#">MENU3</a></li>
+            <li class="l-header-tp4__list"><a href="#">MENU4</a></li>
+            <li class="l-header-tp4__contact"><a href="#">CONTACT</a></li>
+          </ul>
+        </nav>
+        <div class="l-header-tp4__hamburger">
+          <div class="l-header-tp4__hamburger__inner">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header><!-- /headerテンプレート１ -->
+    <div class="l-header-tp4-sp-menu">
+      <ul class="l-header-tp4-sp-menu__lists">
+        <li class="l-header-tp4-sp-menu__list"><a href="#">MENU1</a></li>
+        <li class="l-header-tp4-sp-menu__list"><a href="#">MENU2</a></li>
+        <li class="l-header-tp4-sp-menu__list"><a href="#">MENU3</a></li>
+        <li class="l-header-tp4-sp-menu__list"><a href="#">MENU4</a></li>
+        <li class="l-header-tp4-sp-menu__contact"><a href="#">CONTACT</a></li>
+      </ul>
+      <!-- snsリスト -->
+      <div class="l-header-tp4-sp-menu__socal">
+        <a href="#" class="l-header-tp4-sp-menu__sns"><img src="./assets/img/sns-x.png" alt="x"></a>
+        <a href="#" class="l-header-tp4-sp-menu__sns"><img src="./assets/img/sns-instagram.png" alt="instagram"></a>
+        <a href="#" class="l-header-tp4-sp-menu__sns"><img src="./assets/img/sns-threads.png" alt="threads"></a>
+      </div>
+    </div><!-- /headerテンプレート１ -->
+
+    <!-- jquery/js -->
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+  <script>
+    // tp-3のハンバーガーメニュー
+      $(".l-header-tp4__hamburger").click(function () {
+          $(".l-header-tp4__hamburger__inner").toggleClass('open');
+          $(".l-header-tp4__open").toggleClass('open');
+          $(".l-header-tp4__close").toggleClass('open');
+          $(".l-header-tp4-sp-menu").toggleClass('open');
+      });
+  </script>
+    
+</body>
+</html>

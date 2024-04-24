@@ -1,0 +1,181 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+// headerテンプレート3
+.l-footer-tp3 {
+    background-color: gray;
+
+    &__inner{
+        max-width: 1000px;
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    // top
+    &__top {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    // ロゴ
+    &__logo {
+        font-size: 30px;
+        color: white;
+        text-align: center;
+    }
+
+    // メニュー
+    &__nav {
+
+    }
+    &__lists {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+
+    }
+    
+    &__list {
+        a{
+            display: block;
+            font-size: 16px;
+            color: white;
+            transition: all 0.3s;
+        }
+        a:hover{
+            color: yellow;
+        }
+    }
+    &__list:not(:last-child){
+        margin-right: 10px;
+    }
+
+    // bottom
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    // ©
+    &__copy {
+        font-size: 16px;
+        text-align: center;
+        color: white;
+    }
+    &__links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    &__link {
+        a{
+            display: block;
+            font-size: 10px;
+            color: white;
+            transition: all 0.3s;
+        }
+        a:hover{
+            color: yellow;
+        }
+    }
+    &__link:not(:last-child){
+        margin-right: 10px;
+    }
+
+    // sns
+    &__social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__list {
+            img{
+                width: 20px;
+                height: 20px;
+            }
+        }
+        &__list:not(:last-child){
+            margin-right: 10px;
+        }
+
+    }
+
+}
+
+
+
+@media screen and (max-width:768px) {
+    // headerテンプレート3
+    .l-footer-tp3 {
+        background-color: gray;
+    
+        &__inner{
+            max-width: 1000px;
+            padding: 20px;
+            margin: 0 auto;
+        }
+    
+        // top
+        &__top {
+            margin-bottom: 10px;
+            display: block;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__logo {
+            margin-bottom: 10px;
+            font-size: 22px;
+            color: white;
+            text-align: center;
+        }
+        &__nav {
+    
+        }
+        &__lists {
+            margin-bottom: 10px;
+            justify-content: center;
+        }
+        &__list {
+            a{
+                font-size: 12px;
+            }
+        }
+    
+        // bottom
+        &__bottom {
+            flex-direction: column-reverse;
+    
+        }
+        &__copy {
+            font-size: 12px;
+            text-align: center;
+        }
+        &__links {
+            margin-bottom: 10px;
+    
+        }
+        &__social {
+            margin-bottom: 10px;
+            &__list {
+                img{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            &__list:not(:last-child){
+                margin-right: 10px;
+            }
+    
+        }
+    
+    }
+}

@@ -1,0 +1,211 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+// footerテンプレート5
+.l-footer-tp5 {
+    background-color: gray;
+    &__map {
+        width: 100%;
+        height: 500px;
+    }
+    
+    &__inner {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    // ロゴ
+    &__logo {
+        font-size: 30px;
+        color: white;
+        text-align: center;
+    
+    }
+
+    // 住所
+    &__address {
+        .yubin,
+        .jusho {
+            display: block;
+            font-size: 12px;
+            color: white;
+            transition: all 0.3s;
+        
+        }
+    
+    }
+
+    // プライバシー
+    &__privacy {
+        display: block;
+        font-size: 12px;
+        color: white;
+        transition: all 0.3s;
+        border-bottom: solid 1px white;
+    }
+    &__privacy:hover{
+        color: yellow;
+        border-bottom: solid 1px yellow;
+    }
+    
+    // SNS
+    &__social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__follow {
+            margin-right: 20px;
+            display: block;
+            font-size: 20px;
+            color: white;
+        }
+        
+        &__line {
+            margin-right: 20px;
+            width: 30px;
+            height: 2px;
+            background-color: white;
+        }
+        
+        &__list {
+            img{
+                width: 30px;
+                height: 30px;
+            }
+        }
+        &__list:not(:last-child){
+            margin-right: 10px;
+        }
+    
+    }
+    
+    // お問い合わせ
+    &__contact {
+        width: 300px;
+        height: 40px;
+        border-radius: 20px;
+        border: solid 1px white;
+        transition: all 0.3s;
+        // 位置調整
+        position: relative;
+        span{
+            margin-right: 20px;
+            display: inline;
+            font-size: 16px;
+            color: white;
+            white-space: nowrap;
+            // 位置調整
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    &__contact:hover {
+        border: solid 1px yellow;
+        span{
+            color: yellow;
+        }
+    }
+    
+    // ©
+    &__copy {
+        font-size: 16px;
+        text-align: center;
+        color: white;
+    }
+}
+
+@media screen and (max-width:768px) {
+// footerテンプレート5
+.l-footer-tp5 {
+    // map
+    &__map {
+        height: 300px;
+    }
+    
+    &__inner {
+        padding: 20px;
+        display: block;
+    }
+    
+    // ロゴ
+    &__logo {
+        margin-bottom: 10px;
+        font-size: 22px;
+    }
+
+    // 住所
+    &__address {
+        margin: 0 auto 10px;
+        width: fit-content;
+        .yubin,
+        .jusho {
+            display: inline-block;
+            font-size: 10px;
+            color: white;
+            transition: all 0.3s;
+        
+        }
+    
+    }
+
+    // プライバシー
+    &__privacy {
+        font-size: 12px;
+        width: fit-content;
+        margin: 0 auto;
+    }
+    
+    // SNS
+    &__social {
+        margin-bottom: 10px;
+        &__follow {
+            margin-right: 10px;
+            font-size: 16px;
+        }
+        
+        &__line {
+            margin-right: 10px;
+            width: 20px;
+        }
+        
+        &__list {
+            img{
+                width: 25px;
+                height: 25px;
+            }
+        }
+        &__list:not(:last-child){
+            margin-right: 10px;
+        }
+    
+    }
+    
+    // お問い合わせ
+    &__contact {
+        display: block;
+        width: 240px;
+        height: 30px;
+        margin: 0 auto 10px;
+        span{
+            margin-right: 0px;
+            font-size: 12px;
+        }
+    }
+    
+    // ©
+    &__copy {
+        font-size: 12px;
+    }
+}
+}

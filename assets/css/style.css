@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.l-header-tp1__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.l-header-tp1__logo {
+  font-size: 22px;
+  color: gray;
+}
+.l-header-tp1__nav {
+  display: block;
+}
+.l-header-tp1__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.l-header-tp1__hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .l-header-tp1__nav {
+    width: 100vw;
+    height: 100vh;
+  }
+  .l-header-tp1__hamburger {
+    display: block;
+  }
+}
+/*# sourceMappingURL=style.css.map */

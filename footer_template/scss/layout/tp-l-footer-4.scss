@@ -1,0 +1,214 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+// footerテンプレート4
+.l-footer-tp4 {
+    padding: 20px;
+    background-color: gray;
+
+    
+    // ロゴ
+    &__logo {
+        padding-bottom: 20px;
+        font-size: 30px;
+        color: white;
+        text-align: center;
+
+    }
+    // メニュー
+    &__inner {
+        max-width: 1000px;
+        margin: 0 auto 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    // メニューカラム
+    &__column {
+        padding: 10px 0;
+        width: calc(100% / 4 - 30px / 4);
+    }
+    &__column:not(:last-child) {
+        border-right: solid 1px white;
+    }
+    &__column:not(:first-child) {
+        margin-left: 10px;
+    }
+
+    &__column__name {
+        margin-bottom: 10px;
+        font-size: 20px;
+        color: white;
+        text-align: left;
+    }
+
+    &__list {
+        padding: 10px;
+        a{
+            display: block;
+            font-size: 16px;
+            color: white;
+            text-align: left;
+            transition: all 0.3s;
+        }
+        a:hover{
+            color: yellow;
+        }
+
+    }
+    
+    // sns
+    &__social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__list {
+            img{
+                width: 35px;
+                height: 35px;
+            }
+        }
+        &__list:not(:last-child){
+            margin-right: 30px;
+        }
+
+    }
+
+    // コピー
+    &__copy {
+        padding-top: 20px;
+        font-size: 16px;
+        text-align: center;
+        color: white;
+
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    // footerテンプレート4
+    .l-footer-tp4 {
+        padding: 20px 0;
+        background-color: gray;
+    
+        
+        // ロゴ
+        &__logo {
+            padding-bottom: 20px;
+            font-size: 30px;
+            color: white;
+            text-align: center;
+    
+        }
+        // メニュー
+        &__inner {
+            max-width: 500px;
+            display: block;
+    
+        }
+        // メニューカラム
+        &__column {
+            padding: 10px 0 0;
+            width: auto;
+        }
+        &__column {
+            padding: 10px 0 0;
+            width: auto;
+        }
+        &__column:not(:last-child) {
+            border-right: none;
+        }
+        &__column:not(:first-child) {
+            margin-left: 0px;
+        }
+        
+        // カラムの名前
+        &__column__name {
+            padding: 0 20px 10px;
+            margin-bottom: 0;
+            border-bottom: solid 1px white;
+            display: flex;
+            justify-content: space-between;
+            span{
+                font-size: 12px;
+                text-align: left;
+                position: relative;
+            }
+        }
+        &__column__name:after {
+            content: "+";
+            display: inline-block;
+            width: 1rem;
+            height: 1rem;
+            cursor: pointer;
+        }
+        &__column__name.is-active:after {
+            content: "-";
+            display: inline-block;
+            width: 1rem;
+            height: 1rem;
+            cursor: pointer;
+        }
+
+        &__lists.--smart{
+            display: none;
+        }
+    
+        &__list {
+            margin: 0 auto;
+            padding: 10px 20px;
+            background-color: #909090;
+            border-bottom: solid 1px white;
+            a{
+                font-size: 12px;
+            }
+        }
+        
+        // sns
+        &__social {
+            &__list {
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+            &__list:not(:last-child){
+                margin-right: 10px;
+            }
+
+        }
+
+        // コピー
+        &__copy {
+            padding-top: 10px;
+            font-size: 12px;
+            text-align: center;
+            color: white;
+    
+        }
+    
+    }
+}
+
+// pc/sp切り替え
+.pc-on{
+    display: block;
+}
+.sp-on{
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .pc-on{
+        display: none;
+    }
+    .sp-on{
+        display: block;
+    }
+}

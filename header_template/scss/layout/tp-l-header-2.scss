@@ -1,0 +1,72 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+// headerテンプレート2
+.l-header-tp2 {
+    height: 80px;
+    width: 100%;
+    &__inner {
+        max-width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        font-size: 30px;
+        color: gray;
+    }
+    &__nav {
+        display: block;
+    }
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__list {
+        a{
+            color: gray;
+            font-size: 16px;
+        }
+        a:hover{
+            color: black;
+        }
+    }
+    &__list:not(:last-child){
+        margin-right: 20px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .l-header-tp2 {
+        &__inner {
+            display: block;
+            line-height: 40px;
+        }
+        &__logo {
+            font-size: 24px;
+            color: gray;
+            text-align: center;
+        }
+        &__menu {
+            justify-content: center;
+        }
+        &__list {
+            a{
+                font-size: 12px;
+            }
+        }
+        &__list:not(:last-child){
+            margin-right: 10px;
+        }
+    
+    }
+}

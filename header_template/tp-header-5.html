@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- style.css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Header_template</title>
+</head>
+<body>
+    <!-- headerテンプレート5 -->
+    <header class="l-header-tp5">
+      <div class="l-header-tp5__inner">
+        <!-- メニュー -->
+        <ul class="l-header-tp5__menu--left">
+          <li class="l-header-tp5__list"><a href="#">MENU1</a></li>
+          <li class="l-header-tp5__list"><a href="#">MENU2</a></li>
+          <li class="l-header-tp5__list"><a href="#">MENU3</a></li>
+        </ul>
+        <!-- ロゴ -->
+        <h1 class="l-header-tp5__logo">logo</h1>
+        <!-- メニュー -->
+        <ul class="l-header-tp5__menu--right">
+          <li class="l-header-tp5__list"><a href="#">MENU4</a></li>
+          <li class="l-header-tp5__list"><a href="#">MENU5</a></li>
+          <li class="l-header-tp5__list"><a href="#">MENU6</a></li>
+        </ul>
+        <!-- ハンバーガーメニュー -->
+        <div class="l-header-tp5__hamburger">
+          <div class="l-header-tp5__hamburger__inner">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+    </header><!-- /headerテンプレート5 -->
+    <div class="l-header-tp5-sp-menu">
+      <ul class="l-header-tp5-sp-menu__lists">
+        <li class="l-header-tp5-sp-menu__list logo"><a href="#">LOGO</a></li>
+        <li class="l-header-tp5-sp-menu__list"><a href="#">MENU1</a></li>
+        <li class="l-header-tp5-sp-menu__list"><a href="#">MENU2</a></li>
+        <li class="l-header-tp5-sp-menu__list"><a href="#">MENU3</a></li>
+        <li class="l-header-tp5-sp-menu__list"><a href="#">MENU4</a></li>
+        <li class="l-header-tp5-sp-menu__list"><a href="#">MENU5</a></li>
+        <li class="l-header-tp5-sp-menu__list"><a href="#">MENU6</a></li>
+      </ul>
+      <!-- snsリスト -->
+      <div class="l-header-tp5-sp-menu__socal">
+        <a href="#" class="l-header-tp5-sp-menu__sns"><img src="./assets/img/sns-x.png" alt="x"></a>
+        <a href="#" class="l-header-tp5-sp-menu__sns"><img src="./assets/img/sns-instagram.png" alt="instagram"></a>
+        <a href="#" class="l-header-tp5-sp-menu__sns"><img src="./assets/img/sns-threads.png" alt="threads"></a>
+      </div>
+    </div><!-- /headerテンプレート5 -->
+
+    <!-- jquery/js -->
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+  <script>
+    // tp-5のハンバーガーメニュー
+      $(".l-header-tp5__hamburger").click(function () {
+          $(".l-header-tp5__hamburger__inner").toggleClass('open');
+          $(".l-header-tp5-sp-menu").toggleClass('open');
+      });
+  </script>
+    
+</body>
+</html>

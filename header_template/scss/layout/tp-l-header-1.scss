@@ -1,0 +1,137 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+// headerテンプレート１
+.l-header-tp1 {
+    height: 80px;
+    width: 100%;
+    &__inner {
+        max-width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        font-size: 30px;
+        color: gray;
+    }
+    &__nav {
+        display: block;
+    }
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__list {
+        a{
+            color: gray;
+        }
+        a:hover{
+            color: black;
+        }
+    }
+    &__list:not(:last-child){
+        margin-right: 20px;
+    }
+    &__hamburger {
+        width: 50px;
+        height: 50px;
+        display: none;
+        position: relative;
+        &__inner {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        span{
+            display: block;
+            width: 50px;
+            height: 4px;
+            border-radius: 3px;
+            background-color: gray;
+            transition: all 0.3s;
+        }
+        span:nth-child(2n){
+            margin: 8px 0;
+        }
+    }
+    &__hamburger.open{
+        span{
+            display: block;
+            width: 50px;
+            height: 4px;
+            border-radius: 3px;
+            background-color: gray;
+        }
+        span:nth-child(1n){
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+        span:nth-child(2n){
+            opacity: 0;
+        }
+        span:nth-child(3n){
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+        }
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .l-header-tp1 {
+        &__nav {
+            display: none;
+        }
+        &__hamburger {
+            display: block;
+        }
+    
+    }
+}
+
+.l-header-tp1-sp-menu {
+    display: none;
+    width: 100vw;
+    height: calc(100vh - 80px);
+    background-color: #ccc;
+    position: relative;
+    
+    &__menu {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+    &__list {
+        a{
+            display: block;
+            color: black;
+            font-size: 14px;
+            margin: 0 auto;
+        }
+    }
+    &__list:not(:first-child){
+        margin-top: 20px;
+    }
+
+}
+.l-header-tp1-sp-menu.open{
+    display: block;
+}
+

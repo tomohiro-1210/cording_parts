@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- style.css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Header_template</title>
+</head>
+<body>
+    <!-- headerテンプレート１ -->
+    <header class="l-header-tp3">
+      <div class="l-header-tp3__inner">
+        <h1 class="l-header-tp3__logo">logo</h1>
+        <div class="l-header-tp3__hamburger">
+          <div class="l-header-tp3__hamburger__inner">
+            <div class="l-header-tp3__hamburger__line">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <p class="l-header-tp3__open">OPEN</p>
+          <p class="l-header-tp3__close">CLOSE</p>
+        </div>
+      </div>
+    </header><!-- /headerテンプレート１ -->
+    <div class="l-header-tp3-sp-menu">
+      <ul class="l-header-tp3-sp-menu__menu">
+        <li class="l-header-tp3-sp-menu__list logo"><a href="#">logo</a></li>
+        <li class="l-header-tp3-sp-menu__list"><a href="#">MENU1</a></li>
+        <li class="l-header-tp3-sp-menu__list"><a href="#">MENU2</a></li>
+        <li class="l-header-tp3-sp-menu__list"><a href="#">MENU3</a></li>
+        <li class="l-header-tp3-sp-menu__list"><a href="#">MENU4</a></li>
+        <li class="l-header-tp3-sp-menu__list"><a href="#">MENU5</a></li>
+      </ul>
+    </div><!-- /headerテンプレート１ -->
+
+    <!-- jquery/js -->
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+  <script>
+    // tp-3のハンバーガーメニュー
+      $(".l-header-tp3__hamburger").click(function () {
+          $(".l-header-tp3__hamburger__inner").toggleClass('open');
+          $(".l-header-tp3__open").toggleClass('open');
+          $(".l-header-tp3__close").toggleClass('open');
+          $(".l-header-tp3-sp-menu").toggleClass('open');
+      });
+  </script>
+    
+</body>
+</html>

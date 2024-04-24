@@ -1,0 +1,183 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+// headerテンプレート4
+.l-header-tp5 {
+    height: 80px;
+    width: 100%;
+    &__inner {
+        max-width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        font-size: 30px;
+        color: gray;
+    }
+    &__menu--left,
+    &__menu--right {
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__list {
+        a{
+            color: gray;
+        }
+        a:hover{
+            color: black;
+        }
+    }
+    &__list:not(:last-child){
+        margin-right: 20px;
+    }
+    &__contact{
+        width: 120px;
+        height: 30px;
+        display: block;
+        a{
+            color: white;
+            background-color: black;
+            display: block;
+            line-height: 30px;
+            text-align: center;
+            border: solid 1px black;
+        }
+        a:hover{
+            color: black;
+            background-color: white;
+
+        }
+    }
+    &__hamburger {
+        display: none;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        // hamburgerライン
+        &__inner{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            span{
+                display: block;
+                height: 4px;
+                border-radius: 3px;
+                background-color: gray;
+                transition: all 0.3s;
+            }
+            span:nth-child(1n){
+                width: 50px;
+            }
+            span:nth-child(2n){
+                margin-top: 10px;
+                width: 38px;
+            }
+            span:nth-child(3n){
+                margin-top: 10px;
+                width: 25px;
+            }
+        }
+    }
+    &__hamburger{
+        &__inner.open{
+            background-color: #333;
+            span:nth-child(1n){
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+            span:nth-child(2n){
+                opacity: 0;
+            }
+            span:nth-child(3n){
+                width: 50px;
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(-45deg);
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    // headerテンプレート4
+.l-header-tp5 {
+    &__logo {
+        font-size: 24px;
+        color: gray;
+    }
+    &__menu--left,
+    &__menu--right {
+        display: none;
+    }
+    &__hamburger {
+        display: block;
+    }
+
+}
+}
+
+.l-header-tp5-sp-menu {
+    display: none;
+    width: 100vw;
+    height: calc(100vh - 80px);
+    background-color: #ccc;
+
+    // リスト
+    &__lists{
+        border-top: solid 1px rgba($color: black, $alpha: 0.5);
+    }
+    &__list {
+        padding: 20px;
+        border-bottom: solid 1px rgba($color: black, $alpha: 0.5);
+        a{
+            display: block;
+            color: black;
+            font-size: 16px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+    // ロゴ
+    &__list.logo{
+        a{
+            font-size: 30px;
+        }
+    }
+    // SNS
+    &__socal {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__sns {
+        img{
+            width: 35px;
+            height: 35px;
+        }
+    }
+    &__sns:not(:last-child){
+        margin-right: 30px;
+    }
+}
+.l-header-tp5-sp-menu.open{
+    display: block;
+}
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- style.css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>footer_template</title>
+</head>
+<body>
+  <!-- footerテンプレート5 -->
+  <footer class="l-footer-tp5">
+    <!-- google-map -->
+    <div class="l-footer-tp5__map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3226.296584158278!2d136.24022793109845!3d36.037467022036495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff8bc128a6bef71%3A0x4025e5c877230b9a!2z56aP5LqV55yM56uL5Zuz5pu46aSo!5e0!3m2!1sja!2sjp!4v1713946832810!5m2!1sja!2sjp" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="l-footer-tp5__inner">
+      <!-- ロゴ -->
+      <p class="l-footer-tp5__logo">LOGO</p>
+
+      <!-- 住所 -->
+      <p class="l-footer-tp5__address">
+        <span class="yubin">〒000-1111</span>
+        <span class="jusho">福井県福井市下馬町５１－１１</span>
+      </p>
+  
+      <!-- プライバシー -->
+      <a href="#" class="l-footer-tp5__privacy">プライバシーポリシー</a>
+
+    </div>
+
+    <div class="l-footer-tp5__inner">
+        
+      <!-- SNS -->
+      <ul class="l-footer-tp5__social">
+        <p class="l-footer-tp5__social__follow">Follow US</p>
+        <span class="l-footer-tp5__social__line"></span>
+        <li class="l-footer-tp5__social__list"><a href="#"><img src="./assets/img/sns-instagram.png" alt="sns-instagram"></a></li>
+        <li class="l-footer-tp5__social__list"><a href="#"><img src="./assets/img/sns-threads.png" alt="sns-threads"></a></li>
+        <li class="l-footer-tp5__social__list"><a href="#"><img src="./assets/img/sns-x.png" alt="sns-x"></a></li>
+      </ul>
+  
+      <!-- お問い合わせ -->
+      <a href="#" class="l-footer-tp5__contact"><span>お問い合わせはこちら</span></a>
+  
+      <!-- コピー -->
+      <p class="l-footer-tp5__copy">©Copyright NAME</p>
+
+    </div>
+  </footer>
+
+    <!-- jquery/js -->
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+  <script>
+    // tp-5のハンバーガーメニュー
+      $(".l-header-tp5__hamburger").click(function () {
+          $(".l-header-tp5__hamburger__inner").toggleClass('open');
+          $(".l-header-tp5-sp-menu").toggleClass('open');
+      });
+  </script>
+    
+</body>
+</html>
