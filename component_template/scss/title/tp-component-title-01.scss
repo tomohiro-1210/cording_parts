@@ -1,0 +1,168 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+h2{
+    margin: 20px auto ;
+    width: fit-content;
+    white-space: nowrap;
+}
+
+// タイトルテンプレート01
+.tp-c-title01-01 {
+    border-bottom: 3px solid #000;
+}
+
+// タイトルテンプレート02
+.tp-c-title01-02 {
+    border-bottom: 3px dotted #000;
+}
+
+// タイトルテンプレート03
+.tp-c-title01-03 {
+    border-bottom: 3px dashed #000;
+}
+
+// タイトルテンプレート04
+.tp-c-title01-04 {
+    border-bottom: 6px double #000;
+}
+
+// タイトルテンプレート05
+.tp-c-title01-05 {
+    padding: 10px 20px;
+    border-left: 4px solid #000;
+}
+
+// タイトルテンプレート06
+.tp-c-title01-06 {
+    padding: 10px 20px;
+    border-left: 4px dotted #000;
+}
+
+// タイトルテンプレート07
+.tp-c-title01-07 {
+    padding: 10px 20px;
+    border-left: 4px dashed #000;
+}
+
+// タイトルテンプレート08
+.tp-c-title01-08 {
+    padding: 10px 20px;
+    border-left: 6px double #000;
+}
+
+// タイトルテンプレート09
+.tp-c-title01-09 {
+    padding: 10px 20px;
+    border: 3px solid #000;
+}
+
+// タイトルテンプレート10
+.tp-c-title01-10 {
+    padding: 10px 20px;
+    border: 3px solid #000;
+}
+
+// タイトルテンプレート11
+.tp-c-title01-11 {
+    padding: 10px 20px;
+    border: 3px dotted #000;
+}
+
+// タイトルテンプレート12
+.tp-c-title01-12 {
+    padding: 10px 20px;
+    border: 3px dashed #000;
+}
+
+// タイトルテンプレート13
+.tp-c-title01-13 {
+    padding: 10px 20px;
+    border: 6px double #000;
+}
+
+// タイトルテンプレート14
+.tp-c-title01-14 {
+    position: relative;
+    padding: 10px 20px;
+    border: 4px solid #000;
+}
+.tp-c-title01-14:before {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    content: '';
+    border: 2px solid #000;
+  }
+
+// タイトルテンプレート15
+.tp-c-title01-15 {
+    position: relative;
+    padding: 10px 20px;
+    border: 4px solid #000;
+}
+.tp-c-title01-15:before {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    content: '';
+    border: 4px dotted #000;
+  }
+
+// タイトルテンプレート16
+.tp-c-title01-16 {
+    position: relative;
+    padding: 10px 20px;
+    border: 4px solid #000;
+}
+.tp-c-title01-16:before,
+.tp-c-title01-16:after {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    content: '';
+    border-top: 4px dotted #000;
+  }
+.tp-c-title01-16:before {
+    top: 3px;
+}
+.tp-c-title01-16:after {
+    bottom: 3px;
+}
+
+// タイトルテンプレート17
+.tp-c-title01-17 {
+    padding: 10px 20px;
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+}
+
+// タイトルテンプレート18
+.tp-c-title01-18 {
+    padding: 10px 20px;
+    border-top: 3px dotted #000;
+    border-bottom: 3px dotted #000;
+}
+
+// タイトルテンプレート19
+.tp-c-title01-19 {
+    padding: 10px 20px;
+    border-top: 3px dashed #000;
+    border-bottom: 3px dashed #000;
+}
+
+// タイトルテンプレート20
+.tp-c-title01-20 {
+    padding: 10px 20px;
+    border-top: 6px double #000;
+    border-bottom: 6px double #000;
+}

@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+// タイトル集
+@use './title/tp-component-title-01.scss';
+@use './title/tp-component-title-02.scss';
+@use './title/tp-component-title-03.scss';
+
+// カラム
+@use './column/tp-2column.scss';
