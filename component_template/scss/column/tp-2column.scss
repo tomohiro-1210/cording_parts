@@ -15,14 +15,14 @@ section{
     padding-top: 100px;
 }
 
-.c-title{
+.c-3column-title{
     margin-bottom: 20px;
     color: black;
     font-size: 24px;
     text-align: center;
 }
 
-// ２カラムレイアウト-その１
+// ３カラムレイアウト-その１
 .tp-2column-01 {
     &__inner {
         max-width: 1000px;
@@ -79,7 +79,7 @@ section{
     }
 }
 
-// ２カラムレイアウト-その２
+// ３カラムレイアウト-その２
 .tp-2column-02 {
 
     &__inner {
@@ -141,7 +141,7 @@ section{
     }
 }
 
-// ２カラムレイアウト-その３
+// ３カラムレイアウト-その３
 .tp-2column-03 {
     &__inner {
         max-width: 1000px;
@@ -251,7 +251,7 @@ section{
     }
 }
 
-// ２カラムレイアウト-その４
+// ３カラムレイアウト-その４
 .tp-2column-04 {
     &__inner {
         max-width: 1000px;
@@ -364,7 +364,7 @@ section{
     }
 }
 
-// ２カラムレイアウト-その５
+// ３カラムレイアウト-その５
 .tp-2column-05 {
     &__inner {
         max-width: 1000px;
@@ -443,5 +443,4 @@ section{
         }
     }
 }
-
 
