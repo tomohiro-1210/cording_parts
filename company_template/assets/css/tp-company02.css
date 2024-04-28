@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  vertical-align: bottom;
+}
+
+section {
+  padding-top: 100px;
+}
+
+.c-company-title {
+  margin-bottom: 20px;
+  color: black;
+  font-size: 24px;
+  text-align: center;
+}
+
+.tp-company-02__table {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.tp-company-02__table dt, .tp-company-02__table dt + dd {
+  font-family: "Noto Sans CJK JP";
+  letter-spacing: 0.1em;
+  line-height: 30px;
+  text-align: left;
+  color: #333;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.tp-company-02__table dt:last-of-type, .tp-company-02__table dd:last-of-type {
+  border-bottom: none;
+}
+.tp-company-02__table dt {
+  padding: 20px 0;
+  width: 30%;
+  font-weight: bold;
+  font-size: 20px;
+  color: blue;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: solid 3px blue;
+}
+.tp-company-02__table dt + dd {
+  padding: 20px;
+  width: calc(70% - 40px);
+  font-size: 17px;
+  font-weight: 500;
+  border-bottom: solid 1px #707070;
+}
+
+@media screen and (max-width: 768px) {
+  .tp-company-02 {
+    white-space: wrap;
+  }
+  .tp-company-02__table {
+    max-width: 500px;
+    display: block;
+  }
+  .tp-company-02__table dt, .tp-company-02__table dt + dd {
+    line-height: 22px;
+  }
+  .tp-company-02__table dt:last-of-type, .tp-company-02__table dd:last-of-type {
+    border-bottom: none;
+  }
+  .tp-company-02__table dt {
+    width: auto;
+    padding: 10px 0 0 10px;
+    font-size: 18px;
+    text-align: left;
+    border-bottom: none;
+  }
+  .tp-company-02__table dt + dd {
+    width: auto;
+    padding: 10px;
+    font-size: 15px;
+  }
+}
+/*# sourceMappingURL=tp-company02.css.map */

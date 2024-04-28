@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  vertical-align: bottom;
+}
+
+section {
+  padding-top: 100px;
+}
+
+.c-company-title {
+  margin-bottom: 20px;
+  color: black;
+  font-size: 24px;
+  text-align: center;
+}
+
+.tp-company-01__table {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-top: solid 1px #707070;
+}
+.tp-company-01__table dt, .tp-company-01__table dt + dd {
+  font-family: "Noto Sans CJK JP";
+  font-size: 17px;
+  letter-spacing: 0.1em;
+  line-height: 30px;
+  text-align: left;
+  color: #333;
+  border-bottom: solid 1px #707070;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.tp-company-01__table dt:last-of-type, .tp-company-01__table dd:last-of-type {
+  border-bottom: none;
+}
+.tp-company-01__table dt {
+  width: calc(30% - 22px);
+  font-weight: bold;
+  padding-left: 22px;
+}
+.tp-company-01__table dt + dd {
+  width: 70%;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .tp-company-01__table {
+    padding: 40px 32px;
+    display: block;
+    flex-wrap: nowrap;
+    border-top: none;
+    width: auto;
+    white-space: normal;
+  }
+  .tp-company-01__table dt, .tp-company-01__table dt + dd {
+    font-family: "Noto Sans CJK JP";
+    letter-spacing: 0.1em;
+    line-height: 22px;
+    text-align: left;
+    color: #333;
+    border-bottom: none;
+    padding-top: 10px;
+    padding-bottom: 0px;
+  }
+  .tp-company-01__table dt:last-of-type, .tp-company-01__table dd:last-of-type {
+    border-bottom: none;
+    border-bottom: none;
+  }
+  .tp-company-01__table dt {
+    width: auto;
+    font-weight: bold;
+    padding-left: 0px;
+    font-size: 15px;
+  }
+  .tp-company-01__table dt + dd {
+    width: auto;
+    padding: 10px;
+    border-bottom: solid 1px #707070;
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=tp-company01.css.map */

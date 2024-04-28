@@ -1,0 +1,329 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  vertical-align: bottom;
+}
+
+section {
+  padding-top: 100px;
+}
+
+.c-contact-title {
+  margin-bottom: 20px;
+  color: black;
+  font-size: 24px;
+  text-align: center;
+}
+
+.c-contact-title--ja {
+  color: black;
+  font-size: 30px;
+  display: block;
+}
+
+.c-contact-title--en {
+  color: black;
+  font-size: 24px;
+  display: block;
+}
+
+.tp-contact-02 {
+  padding-bottom: 55px;
+  /* ラベル */
+  /* お問合せフォーム ------------------------------*/
+  /* アイテム */
+  /* ボタン */
+}
+.tp-contact-02__before {
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.15em;
+  line-height: 28px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 50px;
+}
+.tp-contact-02__label {
+  padding: 2px 14px;
+  font-size: 12px;
+  text-align: left;
+  color: #000;
+  margin-left: 13px;
+  border-radius: 15px;
+}
+.tp-contact-02__label-danger {
+  background: #E80101;
+  color: #fff;
+}
+.tp-contact-02__items {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.tp-contact-02__item dl {
+  display: flex;
+}
+.tp-contact-02__item dt {
+  width: 25%;
+}
+.tp-contact-02__item dd {
+  width: 75%;
+  align-items: center;
+}
+.tp-contact-02__item dd select, .tp-contact-02__item dd input, .tp-contact-02__item dd textarea {
+  display: block;
+  font-size: 14px;
+  height: 30px;
+}
+.tp-contact-02__item dd textarea {
+  width: calc(100% - 40px);
+  height: 159px;
+  padding: 10px;
+}
+.tp-contact-02__item__name {
+  display: flex;
+}
+.tp-contact-02__item__name--input {
+  width: 121px;
+  margin-right: 16px;
+}
+.tp-contact-02__item__name--input:last-child {
+  margin-right: 0px;
+}
+.tp-contact-02__item__name--example {
+  font-family: "Yu Gothic";
+  font-weight: normal;
+  font-size: 16px;
+  margin-right: 7px;
+}
+.tp-contact-02__item__mail--input {
+  width: 342px;
+}
+.tp-contact-02__item__tel {
+  display: flex;
+}
+.tp-contact-02__item__tel--input {
+  width: 93px;
+  margin-right: 7px;
+}
+.tp-contact-02__item__tel--line::after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background: #000000;
+  display: block;
+  width: 7px;
+  position: relative;
+  top: 50%;
+  margin-right: 7px;
+}
+.tp-contact-02__item__tel--input:last-child {
+  margin-right: 0px;
+}
+.tp-contact-02__item:not(:last-child) {
+  margin-bottom: 26px;
+}
+.tp-contact-02__title {
+  font-family: "Yu Gothic";
+  font-size: 14px;
+  text-align: right;
+  color: #000;
+  margin-right: 47px;
+  height: 30px;
+  line-height: 30px;
+}
+.tp-contact-02__title--name {
+  display: inline-block;
+}
+.tp-contact-02__privicy {
+  display: flex;
+  align-items: center;
+}
+.tp-contact-02__privicy .check-box {
+  display: flex;
+  display: inline-block;
+  margin: 0 9px 0 0;
+}
+.tp-contact-02__privicy__check {
+  display: flex;
+  align-items: center;
+}
+.tp-contact-02__privicy--doui, .tp-contact-02__privicy-link {
+  font-family: "Noto Sans CJK JP";
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+}
+.tp-contact-02__privicy-link {
+  color: #198af9;
+  margin-left: 47px;
+  transition: all 0.5s;
+  height: 30px;
+  line-height: 30px;
+}
+.tp-contact-02__privicy-link:hover {
+  cursor: pointer;
+  border-bottom: solid 1px #198af9;
+}
+.tp-contact-02 label:not(:first-child) {
+  margin-left: 24px;
+}
+.tp-contact-02--submit {
+  font-family: "Yu Gothic";
+  color: #fff;
+  background: #198AF9;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  color: #fff;
+  padding: 19px 110px;
+  border: solid 2px #198AF9;
+  display: block;
+  margin: 68px auto 0;
+}
+.tp-contact-02--submit:hover {
+  color: #1B1B1D;
+  background: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  /* フォーム */
+  .tp-contact-02 {
+    /* ラベル */
+    /* お問合せフォーム ------------------------------*/
+    /* アイテム */
+    /* ボタン */
+  }
+  .tp-contact-02__form {
+    padding: 30px 20px;
+    margin-left: 0%;
+    width: calc(100% - 40px);
+  }
+  .tp-contact-02__before {
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.15em;
+    line-height: 28px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 50px;
+  }
+  .tp-contact-02__label {
+    padding: 2px 14px;
+    font-size: 12px;
+    text-align: left;
+    color: #000;
+    margin-left: 13px;
+    border-radius: 15px;
+  }
+  .tp-contact-02__label-danger {
+    background: #E80101;
+    color: #fff;
+  }
+  .tp-contact-02__items {
+    max-width: 1000px;
+  }
+  .tp-contact-02__item dl {
+    display: block;
+  }
+  .tp-contact-02__item dt {
+    width: auto;
+  }
+  .tp-contact-02__item dd {
+    width: auto;
+    align-items: left;
+  }
+  .tp-contact-02__item dd select, .tp-contact-02__item dd input, .tp-contact-02__item dd textarea {
+    display: block;
+    font-size: 14px;
+    height: 30px;
+  }
+  .tp-contact-02__item dd textarea {
+    width: calc(100% - 40px);
+    height: 159px;
+    padding: 10px;
+  }
+  .tp-contact-02__item__name--input {
+    width: 100px;
+  }
+  .tp-contact-02__item__name--input:last-child {
+    margin-right: 0px;
+  }
+  .tp-contact-02__item__name--example {
+    font-size: 14px;
+  }
+  .tp-contact-02__item__mail--input {
+    width: calc(100% - 40px);
+  }
+  .tp-contact-02__item__tel {
+    display: flex;
+  }
+  .tp-contact-02__item__tel--input {
+    width: 85px;
+    margin-right: 7px;
+  }
+  .tp-contact-02__item__tel--line::after {
+    content: "";
+    flex-grow: 1;
+    height: 1px;
+    background: #000000;
+    display: block;
+    width: 7px;
+    position: relative;
+    top: 50%;
+    margin-right: 7px;
+  }
+  .tp-contact-02__item__tel--input:last-child {
+    margin-right: 0px;
+  }
+  .tp-contact-02__item:not(:last-child) {
+    margin-bottom: 26px;
+  }
+  .tp-contact-02__title {
+    text-align: left;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    height: 20px;
+    line-height: 20px;
+  }
+  .tp-contact-02__title--name {
+    display: inline-block;
+  }
+  .tp-contact-02__privicy {
+    display: block;
+  }
+  .tp-contact-02__privicy--doui, .tp-contact-02__privicy-link {
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+  }
+  .tp-contact-02__privicy-link {
+    color: #198af9;
+    margin-left: 0px;
+    text-align: center;
+    width: 100%;
+  }
+  .tp-contact-02 label:not(:first-child) {
+    margin-left: 24px;
+  }
+  .tp-contact-02--submit {
+    margin: 30px auto 0;
+  }
+  .tp-contact-02--submit:hover {
+    color: #1B1B1D;
+    background: #fff;
+  }
+}
+/*# sourceMappingURL=tp-contact02.css.map */

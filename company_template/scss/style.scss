@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+// 会社概要
+@use './company/tp-company01.scss';
+@use './company/tp-company02.scss';
+
+// プライバシー
+@use './privacy/tp-privacy01.scss';
+@use './privacy/tp-privacy02.scss';
+@use './privacy/tp-privacy03.scss';
+
+// お問い合わせ
+@use './contact/tp-contact01.scss';
+@use './contact/tp-contact02.scss';
+@use './contact/tp-contact03.scss';
+@use './contact/tp-contact04.scss';
+
+// ブログ
+@use './blog/tp-blog-01.scss';
+@use './blog/tp-blog-02.scss';

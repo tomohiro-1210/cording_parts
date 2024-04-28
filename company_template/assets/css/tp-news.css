@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  vertical-align: bottom;
+}
+
+section {
+  padding-top: 100px;
+}
+
+.c-news-title {
+  margin-bottom: 20px;
+  color: black;
+  font-size: 24px;
+  text-align: center;
+}
+
+.tp-news-01 {
+  padding: 100px 20px;
+}
+.tp-news-01__list {
+  max-width: 1000px;
+  margin: 0 auto;
+  border-top: solid 1px black;
+}
+.tp-news-01__item {
+  padding: 15px 20px;
+  border-bottom: solid 1px black;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.tp-news-01__inner {
+  width: 300px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.tp-news-01__date {
+  margin-right: 10px;
+  color: black;
+  font-size: 16px;
+}
+.tp-news-01__lavel {
+  margin-right: 20px;
+  width: 120px;
+  height: 20px;
+  background-color: black;
+}
+.tp-news-01__lavel span {
+  display: block;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  line-height: 20px;
+}
+.tp-news-01__title {
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .tp-news-01__list {
+    max-width: 500px;
+    margin: 0 auto;
+    border-top: solid 1px black;
+  }
+  .tp-news-01__item {
+    padding: 10px;
+    border-bottom: solid 1px black;
+    display: block;
+  }
+  .tp-news-01__inner {
+    width: auto;
+  }
+  .tp-news-01__date {
+    font-size: 12px;
+  }
+  .tp-news-01__lavel {
+    margin-right: 0px;
+    width: 100px;
+  }
+  .tp-news-01__lavel span {
+    font-size: 12px;
+  }
+  .tp-news-01__title {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+}
+.tp-news-02 {
+  padding: 100px 20px;
+}
+.tp-news-02__list {
+  max-width: 1000px;
+  margin: 0 auto;
+  border-top: solid 1px black;
+}
+.tp-news-02__item {
+  padding: 15px 20px;
+  border-bottom: solid 1px black;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.tp-news-02__inner {
+  width: 150px;
+}
+.tp-news-02__date {
+  margin-bottom: 10px;
+  color: black;
+  font-size: 16px;
+}
+.tp-news-02__lavel {
+  width: 120px;
+  height: 20px;
+  background-color: black;
+}
+.tp-news-02__lavel span {
+  display: block;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  line-height: 20px;
+}
+.tp-news-02__title {
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .tp-news-02__list {
+    max-width: 500px;
+    margin: 0 auto;
+    border-top: solid 1px black;
+  }
+  .tp-news-02__item {
+    padding: 10px;
+    border-bottom: solid 1px black;
+  }
+  .tp-news-02__inner {
+    margin-right: 10px;
+    width: auto;
+  }
+  .tp-news-02__date {
+    font-size: 12px;
+  }
+  .tp-news-02__lavel {
+    margin-right: 0px;
+    width: 100px;
+  }
+  .tp-news-02__lavel span {
+    font-size: 12px;
+  }
+  .tp-news-02__title {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+}
+.tp-news-03 {
+  padding: 100px 20px;
+}
+.tp-news-03__list {
+  max-width: 1000px;
+  margin: 0 auto;
+  border-top: solid 1px black;
+}
+.tp-news-03__item {
+  border-bottom: solid 1px black;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.tp-news-03__inner {
+  padding: 10px 20px 10px 40px;
+  margin-right: 10px;
+  background-color: #ddd;
+}
+.tp-news-03__date {
+  color: black;
+  font-size: 16px;
+}
+.tp-news-03__title {
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .tp-news-03__list {
+    max-width: 500px;
+    margin: 0 auto;
+    border-top: solid 1px black;
+  }
+  .tp-news-03__item {
+    border-bottom: solid 1px black;
+  }
+  .tp-news-03__inner {
+    margin-right: 10px;
+    width: auto;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .tp-news-03__date {
+    font-size: 12px;
+  }
+  .tp-news-03__title {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=tp-news.css.map */

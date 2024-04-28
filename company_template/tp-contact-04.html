@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- style.css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>contact_template</title>
+</head>
+<body>
+    <form class="contact-form">
+        <ul class="contact-form__items">
+
+          <!-- アイテム 都道府県 -->
+          <li class="contact-form__item">
+              <dl>
+                  <dt class="contact-form__title">
+                    <span class="contact-form__label contact-form__label-danger">必須</span>
+                    <span class="contact-form__title--name">お問い合わせ種別</span>
+                  </dt>
+                  <dd>
+                      <select>
+                          <option disabled selected style="display: none;">お選びください</option>
+                          <option>新築住宅について</option>
+                          <option>建て替えについて</option>
+                          <option>リフォーム・リノベーションについて</option>
+                          <option>設備空調ソリューションについて</option>
+                          <option>住宅設備の修理・修繕について</option>
+                          <option>求人について</option>
+                          <option>その他</option>
+                      </select>
+                  </dd>
+              </dl>
+          </li><!-- /アイテム 都道府県 -->
+
+            <!-- アイテム 会社名 -->
+            <li class="contact-form__item">
+                <dl>
+                    <dt class="contact-form__title">
+                      <span class="contact-form__label">任意</span>
+                      <span class="contact-form__title--name">会社名 </span>
+                    </dt>
+                    <dd>
+                        <input type="text" placeholder="株式会社 佐保工務店">
+                    </dd>
+                </dl>
+            </li><!-- /アイテム 会社名 -->
+
+            <!-- アイテム お名前 -->
+            <li class="contact-form__item">
+                <dl>
+                    <dt class="contact-form__title">
+                      <span class="contact-form__label contact-form__label-danger">必須</span>
+                      <span class="contact-form__title--name">お名前 </span>
+                    </dt>
+                    <dd class="contact-form__item__name">
+                        <input class="contact-form__item__name--input" type="text" placeholder="佐保">
+                        <input class="contact-form__item__name--input" type="text" placeholder="謙二 ">
+                    </dd>
+                </dl>
+            </li><!-- /アイテム お名前 -->
+
+            <!-- アイテム お名前(カナ) -->
+            <li class="contact-form__item">
+                <dl>
+                    <dt class="contact-form__title">
+                      <span class="contact-form__label contact-form__label-danger">必須</span>
+                      <span class="contact-form__title--name">お名前(カナ) </span>
+                    </dt>
+                    <dd class="contact-form__item__name">
+                        <input class="contact-form__item__name--input" type="text" placeholder="サホ">
+                        <input class="contact-form__item__name--input" type="text" placeholder="ケンジ ">
+                    </dd>
+                </dl>
+            </li><!-- /アイテム お名前(カナ) -->
+
+            <!-- アイテム メールアドレス -->
+            <li class="contact-form__item">
+                <dl>
+                    <dt class="contact-form__title">
+                      <span class="contact-form__label contact-form__label-danger">必須</span>
+                      <span class="contact-form__title--name">メールアドレス </span>
+                    </dt>
+                    <dd>
+                        <input type="text" placeholder="example@saho-koumuten.co.jp">
+                    </dd>
+                </dl>
+            </li><!-- /アイテム メールアドレス -->
+            
+            <!-- アイテム メールアドレス(確認) -->
+            <li class="contact-form__item">
+                <dl>
+                    <dt class="contact-form__title">
+                      <span class="contact-form__label contact-form__label-danger">必須</span>
+                      <span class="contact-form__title--name">メールアドレス(確認) </span>
+                    </dt>
+                    <dd>
+                        <input type="text" placeholder="example@saho-koumuten.co.jp">
+                    </dd>
+                </dl>
+            </li><!-- /アイテム メールアドレス(確認) -->
+
+            <!-- アイテム 電話番号 -->
+            <li class="contact-form__item">
+                <dl>
+                    <dt class="contact-form__title">
+                      <span class="contact-form__label">任意</span>
+                      <span class="contact-form__title--name">電話番号 </span>
+                    </dt>
+                    <dd class="contact-form__item__tel">
+                        <input  class="contact-form__item__tel--input" type="text" placeholder="000">
+                        <div class="contact-form__item__tel--line"></div>
+                        <input  class="contact-form__item__tel--input" type="text" placeholder="0000">
+                        <div class="contact-form__item__tel--line"></div>
+                        <input  class="contact-form__item__tel--input" type="text" placeholder="0000">
+                    </dd>
+                </dl>
+            </li><!-- /アイテム 電話番号 -->
+
+            <!-- アイテム お問合せ内容 -->
+            <li class="contact-form__item">
+                <dl>
+                    <dt class="contact-form__title">
+                      <span class="contact-form__label contact-form__label-danger">必須</span>
+                      <span class="contact-form__title--name">お問合せ内容</span>
+                    </dt>
+                    <dd  class="contact-form__item__inquiry">
+                      <textarea  class="contact-form__item__inquiry--textarea" rows="3" placeholder="お問合せ内容を入力してください"></textarea>
+                    </dd>
+                </dl>
+            </li><!-- /アイテム お問合せ内容 -->
+
+        </ul>
+
+        <!-- プライバシーポリシー同意 -->
+        <div class="contact-form__privacy">
+          <div class="contact-form__privacy__container">
+            <p class="contact-form__privacy__txt pc-on" >※個人情報に関する基本方針については<a target="_blank" href="<?php echo home_url(); ?>/privacy/">個人情報保護方針</a>のページをご参照ください。</p>
+            <p class="contact-form__privacy__txt sp-on" >※個人情報に関する基本方針については<br><a target="_blank" href="<?php echo home_url(); ?>/privacy/">個人情報保護方針</a>のページをご参照ください。</p>
+              <label class="contact-form__privacy__check">
+                <span class="contact-form__label contact-form__label-danger">必須</span>
+                <input class="check-box" type="checkbox" name="check-name">
+                <span class="doui">「個人情報保護方針」に同意する</span>
+              </label>
+            </div><!-- /プライバシーポリシー同意 -->
+          </div>
+        
+        <!-- ボタン -->
+            <input class="contact-form--submit" type="button" value="入力内容を確認する">
+            <!-- /ボタン -->
+        
+    </form>
+
+
+    <!-- jquery/js -->
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+    
+</body>
+</html>

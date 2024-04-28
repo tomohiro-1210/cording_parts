@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  vertical-align: bottom;
+}
+
+section {
+  padding-top: 100px;
+}
+
+.c-contact-title {
+  margin-bottom: 20px;
+  color: black;
+  font-size: 24px;
+  text-align: center;
+}
+
+.c-contact-title--ja {
+  color: black;
+  font-size: 30px;
+  display: block;
+}
+
+.c-contact-title--en {
+  color: black;
+  font-size: 24px;
+  display: block;
+}
+
+#contact {
+  margin: 100px auto;
+}
+
+.tp-contact-01__form {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.tp-contact-01__form__text {
+  margin: 60px 0;
+  color: black;
+  font-size: 20px;
+  font-weight: normal;
+  font-weight: bold;
+}
+.tp-contact-01__form__title {
+  color: blue;
+  font-size: 30px;
+  font-weight: bold;
+}
+.tp-contact-01__form__item {
+  margin-top: 20px;
+}
+.tp-contact-01__form__item .required {
+  margin: 0 15px 0px 0px;
+  padding: 3px 10px;
+  color: white;
+  background-color: red;
+  font-size: 12px;
+  font-weight: bold;
+}
+.tp-contact-01__form__item p {
+  margin: 0 0 10px 10px;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+}
+.tp-contact-01__form__item input, .tp-contact-01__form__item textarea {
+  width: calc(100% - 24px);
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 5px 10px;
+  border: solid 2px black;
+}
+.tp-contact-01__form__item.button {
+  width: 100%;
+  margin-top: 0;
+  text-align: center;
+}
+.tp-contact-01__form__button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 30px auto 0;
+  padding: 8px 68px;
+  border: solid 1px blue;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 45px;
+  color: white;
+  background-color: blue;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  #contact {
+    margin: 60px auto;
+  }
+  .tp-contact-01__form__text {
+    margin: 30px 0;
+    font-size: 16px;
+  }
+  .tp-contact-01__form__title {
+    font-size: 24px;
+  }
+  .tp-contact-01__form__item .required {
+    margin: 0 10px 0px 0px;
+    padding: 2px 8px;
+    font-size: 10px;
+  }
+  .tp-contact-01__form__item p {
+    margin: 0 0 5px 10px;
+    font-size: 14px;
+  }
+  .tp-contact-01__form__item input, .tp-contact-01__form__item textarea {
+    font-size: 14px;
+  }
+  .tp-contact-01__form__button {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 30px auto 0;
+    padding: 7px 55px;
+    font-size: 24px;
+  }
+}
+/*# sourceMappingURL=tp-contact01.css.map */

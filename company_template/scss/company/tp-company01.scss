@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    vertical-align: bottom;
+}
+
+section{
+    padding-top: 100px;
+}
+
+.c-company-title{
+    margin-bottom: 20px;
+    color: black;
+    font-size: 24px;
+    text-align: center;
+}
+
+// 会社概要テンプレ01(G-planning)
+
+//企業概要
+.tp-company-01 {
+    &__table {
+        width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        border-top: solid 1px #707070;
+        dt,dt+dd{
+            font-family: "Noto Sans CJK JP";
+            font-size: 17px;
+            letter-spacing: 0.1em;
+            line-height: 30px;
+            text-align: left;
+            color: #333;
+            border-bottom: solid 1px #707070;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        dt:last-of-type,dd:last-of-type{
+            border-bottom: none;
+        }
+        dt{
+            width: calc(30% - 22px);
+            font-weight: bold;
+            padding-left: 22px;
+        }
+        dt+dd{
+            width: calc(100% - 30%);
+            font-weight: 500;
+        }
+        
+        
+    }
+    
+}
+//レスポンシブ
+@media screen and (max-width:768px) {
+    //企業概要
+    .tp-company-01 {
+        &__table {
+            padding: 40px 32px;
+            display: block;
+            flex-wrap: nowrap;
+            border-top: none;
+            width: auto;
+            white-space: normal;
+            dt,dt+dd{
+                font-family: "Noto Sans CJK JP";
+                letter-spacing: 0.1em;
+                line-height: 22px;
+                text-align: left;
+                color: #333;
+                border-bottom: none;
+                padding-top: 10px;
+                padding-bottom: 00px;
+            }
+            dt:last-of-type,dd:last-of-type{
+                border-bottom: none;
+                border-bottom: none;
+            }
+            dt{
+                width: auto;
+                font-weight: bold;
+                padding-left: 0px;
+                font-size: 15px;
+            }
+            dt+dd{
+                width: auto;
+                padding: 10px;
+                border-bottom: solid 1px #707070;
+                font-size: 14px;
+            }           
+        }
+    }
+
+}

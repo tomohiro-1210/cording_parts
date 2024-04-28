@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- style.css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>contact_template</title>
+</head>
+<body>
+
+  <!-- contactForm -->
+  <section class="tp-contact-02">
+    <!-- 見出し -->
+    <h1 class="c-contact-title"><span class="c-contact-title--ja">お問い合わせ</span><span class="c-contact-title--en">Contact</span></h1>
+      <form class="tp-contact-02__form">
+          <ul class="tp-contact-02__items">
+
+              <!-- アイテム 御社名 -->
+              <li class="tp-contact-02__item">
+                  <dl>
+                      <dt class="tp-contact-02__title">
+                        <span class="tp-contact-02__title--name">御社名</span>
+                      </dt>
+                      <dd>
+                          <input type="text" placeholder="株式会社 G-planning" style="width: 300px;">
+                      </dd>
+                  </dl>
+              </li><!-- /アイテム 御社名 -->
+  
+              <!-- アイテム お名前 -->
+              <li class="tp-contact-02__item">
+                  <dl>
+                      <dt class="tp-contact-02__title">
+                        <span class="tp-contact-02__title--name">お名前</span>
+                        <span class="tp-contact-02__label tp-contact-02__label-danger">必須</span>
+                      </dt>
+                      <dd class="tp-contact-02__item__name">
+                          <span class="tp-contact-02__item__name--example">姓</span>
+                          <input class="tp-contact-02__item__name--input" type="text">
+                          <span class="tp-contact-02__item__name--example">名</span>
+                          <input class="tp-contact-02__item__name--input" type="text">
+                      </dd>
+                  </dl>
+              </li><!-- /アイテム お名前 -->
+  
+              <!-- アイテム フリガナ -->
+              <li class="tp-contact-02__item">
+                  <dl>
+                      <dt class="tp-contact-02__title">
+                        <span class="tp-contact-02__title--name">フリガナ</span>
+                        <span class="tp-contact-02__label tp-contact-02__label-danger">必須</span>
+                      </dt>
+                      <dd class="tp-contact-02__item__name">
+                          <span class="tp-contact-02__item__name--example">セイ</span>
+                          <input class="tp-contact-02__item__name--input" type="text">
+                          <span class="tp-contact-02__item__name--example">メイ</span>
+                          <input class="tp-contact-02__item__name--input" type="text">
+                      </dd>
+                  </dl>
+              </li><!-- /アイテム フリガナ -->
+  
+              <!-- アイテム メールアドレス -->
+              <li class="tp-contact-02__item">
+                  <dl>
+                      <dt class="tp-contact-02__title">
+                        <span class="tp-contact-02__title--name">メールアドレス</span>
+                        <span class="tp-contact-02__label tp-contact-02__label-danger">必須</span>
+                      </dt>
+                      <dd class="tp-contact-02__item__mail">
+                          <input class="tp-contact-02__item__mail--input" type="text" placeholder="example@g-planning.co.jp">
+                      </dd>
+                  </dl>
+              </li><!-- /アイテム メールアドレス -->
+              
+              <!-- アイテム メールアドレス(確認) -->
+              <li class="tp-contact-02__item">
+                  <dl>
+                      <dt class="tp-contact-02__title">
+                        <span class="tp-contact-02__title--name">メールアドレス(確認)</span>
+                        <span class="tp-contact-02__label tp-contact-02__label-danger">必須</span>
+                      </dt>
+                      <dd class="tp-contact-02__item__mail">
+                          <input class="tp-contact-02__item__mail--input" type="text" placeholder="example@g-planning.co.jp">
+                      </dd>
+                  </dl>
+              </li><!-- /アイテム メールアドレス(確認) -->
+  
+              <!-- アイテム お電話番号 -->
+              <li class="tp-contact-02__item">
+                  <dl>
+                      <dt class="tp-contact-02__title">
+                        <span class="tp-contact-02__title--name">お電話番号</span>
+                        <span class="tp-contact-02__label tp-contact-02__label-danger">必須</span>
+                      </dt>
+                      <dd class="tp-contact-02__item__tel">
+                          <input  class="tp-contact-02__item__tel--input" type="text" placeholder="000">
+                          <div class="tp-contact-02__item__tel--line"></div>
+                          <input  class="tp-contact-02__item__tel--input" type="text" placeholder="0000">
+                          <div class="tp-contact-02__item__tel--line"></div>
+                          <input  class="tp-contact-02__item__tel--input" type="text" placeholder="0000">
+                      </dd>
+                  </dl>
+              </li><!-- /アイテム お電話番号 -->
+  
+              <!-- アイテム お問合せ内容 -->
+              <li class="tp-contact-02__item">
+                  <dl>
+                      <dt class="tp-contact-02__title">
+                        <span class="tp-contact-02__title--name">お問合せ内容</span>
+                        <span class="tp-contact-02__label tp-contact-02__label-danger">必須</span>
+                      </dt>
+                      <dd  class="tp-contact-02__item__inquiry">
+                        <textarea  class="tp-contact-02__item__inquiry--textarea" rows="3" placeholder="お問合せ内容を入力してください"></textarea>
+                      </dd>
+                  </dl>
+              </li><!-- /アイテム お問合せ内容 -->
+  
+              <!-- アイテム 個人情報取り扱い -->
+              <li class="tp-contact-02__item">
+                  <dl>
+                      <dt class="tp-contact-02__title">
+                        <span class="tp-contact-02__title--name">個人情報取り扱い</span>
+                        <span class="tp-contact-02__label tp-contact-02__label-danger">必須</span>
+                      </dt>
+                      <dd  class="tp-contact-02__privicy">
+                              <div class="tp-contact-02__privicy__check">
+                                  <input class="check-box" type="checkbox" name="check-name">
+                                  <span class="tp-contact-02__privicy--doui">プライバシーポリシーに同意します。</span>
+                              </div>
+                              <a href="/privacy.html" class="tp-contact-02__privicy-link">プライバシーポリシー</a>
+                      </dd>
+                  </dl>
+              </li><!-- /アイテム 個人情報取り扱い -->
+  
+          </ul>
+          
+          <!-- ボタン -->
+              <input class="tp-contact-02--submit" type="button" value="送信する">
+              <!-- /ボタン -->
+          
+      </form>
+  </section>
+  <!-- /contactForm -->
+
+
+    <!-- jquery/js -->
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+    
+</body>
+</html>
